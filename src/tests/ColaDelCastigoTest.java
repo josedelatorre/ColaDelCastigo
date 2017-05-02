@@ -11,15 +11,12 @@ public class ColaDelCastigoTest {
 
 	@Test
 	public void AddSuccess() {
-		Setup();
 		assert (c.add(9));
 		assert (c.peek() == 9);
 	}
 
 	@Test
 	public void AddFail() {
-
-		Setup();
 		for (int i = 0; i < 10; i++) {
 			c.add(i);
 		}
